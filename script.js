@@ -1,4 +1,7 @@
+window.addEventListener('load'func);
+function func() {
 const sound = document.getElementById('audio');
+    sound.currentTime=0;
 sound.play();
 setInterval(createSnowFlake, 100);
 setInterval(createCircleFall, 200);
@@ -52,6 +55,7 @@ function change() {
 function changeText(r,g,b) {
     color="#"+hex[r]+hex[g]+hex[b]
     header.style.color=color;
+}
 }
 //setTimeout(() => {
   //  header.changeOpacity();}
