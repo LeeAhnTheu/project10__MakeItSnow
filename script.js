@@ -1,4 +1,4 @@
-window.addEventListener('load'func);
+window.addEventListener('load',func);
 function func() {
 const sound = document.getElementById('audio');
     sound.currentTime=0;
