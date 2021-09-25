@@ -1,4 +1,5 @@
-
+const sound = document.getElementById('audio');
+sound.play();
 setInterval(createSnowFlake, 100);
 setInterval(createCircleFall, 200);
 function createSnowFlake() {
