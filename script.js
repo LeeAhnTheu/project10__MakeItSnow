@@ -1,8 +1,10 @@
-window.addEventListener('load',func);
-function func() {
-const sound = document.getElementById('audio');
-    sound.currentTime=0;
-sound.play();
+
+window.addEventListener('load', ()=>{
+    const sound = document.getElementById('s');
+    sound.autoplay = true;
+    sound.muted = false;
+    sound.play();
+});
 setInterval(createSnowFlake, 100);
 setInterval(createCircleFall, 200);
 function createSnowFlake() {
@@ -41,21 +43,12 @@ function createCircleFall() {
 }
 
 const header = document.getElementById('header');
-setInterval(change,80);
+setInterval(changeText,80);
 //header.style.opacity = 0.5;
-var r=255;
-var g=255;
-var b=255;
 
-function change() {
-    g=200;
-    b=80;
-    changeText(r,g,b);
-}
-function changeText(r,g,b) {
-    color="#"+hex[r]+hex[g]+hex[b]
-    header.style.color=color;
-}
+
+function changeText() {
+    header.style.color= `rgb(255, 200, 81)`;
 }
 //setTimeout(() => {
   //  header.changeOpacity();}
